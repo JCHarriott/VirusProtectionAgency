@@ -28,6 +28,12 @@ public class Map : MonoBehaviour {
                 tile_go.isStatic = true;
             }
         }
+
+        Transform t = this.transform;
+        t.position = new Vector3 (t.position.x,t.position.y,4);
+        t.Rotate(new Vector3(-90, 0, 0));
+        transform.position = t.position;
+        
 	}
 	
 	// Update is called once per frame
